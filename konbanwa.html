@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- homepage by !noha/.gytc - (noha/noga on rizon) || javascript by nullbyte (nullbyte on rizon)-->
+
+<!-- Modified by some random anon, download latest official Konbanwa from Noha's DA http://noha-ra.deviantart.com/ -->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>new tab</title>
+
+<script type="text/javascript">
+
+	var ImgArray = new Array();
+		ImgArray = ["1.png",];
+
+	function getRandom(imgAr, path) {
+		var d = new Date();
+		var n = d.getHours();
+		if ( n == 23 || n == 0) {
+			path = 'konbanwa/night/';
+		} else if ( n >= 1 && n <= 4 ) {
+			path = 'konbanwa/night/';
+		} else if ( n >= 5 && n <= 12 ) {
+			path = 'konbanwa/morning/';
+		} else if ( n >= 13 && n <= 17 ) {
+			path = 'konbanwa/afternoon/';
+		} else if ( n >= 18 && n <= 22 ) {
+			path = 'konbanwa/evening/';
+		}
+		var num = Math.floor( Math.random() * imgAr.length );
+		var img = imgAr[ num ];
+		var imgStr = '<img src="' + path + img + '" alt = "">';
+		document.write(imgStr); document.close();
+}
+</script>
+
+</head>
+<style>
+    a{
+		color:#c3c3c3;
+		font-family:"Segoe UI light";
+		font-size:23px;
+		text-decoration:none;
+		margin-left:15px;
+		text-align:center;
+		transition-property: color;
+		transition-duration: .2s;
+		transition-timing-function: linear;
+    }
+
+    body{
+
+		background:#FBFBFB;
+    }
+
+	.boxed span {
+    margin-left:25px;
+}
+
+	spanlink{
+		margin-left:20px;
+    }
+
+    a:hover{ color:#A9BFA5}
+
+	#s{
+		height:30px;
+		width:378px;
+		font-family: Segoe UI;
+		font-weight: lighter;
+		color:#c8c8c8;
+		font-size:25px;
+		background:#FFFFFF;
+	}
+
+    input[type=text]{
+		width: 255px;
+		padding: 3px;
+		position:absolute;
+		right:5px;bottom:5px;
+		border: 1px solid #E6e6e6;
+		transition-property: border-color;
+		transition-duration: .2s;
+		transition-timing-function: linear;
+		color: #bebebe
+    }
+
+    input[type=text]:hover{
+		border-color: #bebebe;
+		transition-property: border-color;
+		transition-duration: .2s;
+		transition-timing-function: linear;
+		color: #bebebe;
+    }
+
+	.search{
+		margin-top:127px;
+		margin-left: 198px;
+		position:absolute;
+		left:50%;
+		top:50%;
+    }
+
+	.header{
+		border: 1px solid #e6e6e6;
+		padding-top:8px;
+		padding-bottom:4px;
+		padding-right:6px;
+		padding-left:8px;
+		color: #494949;
+		background-color: #ffffff;
+		width: 370px;
+		margin-left: -193px;
+		margin-right: auto;
+		position:absolute;
+		left:50%;
+		top:50%;
+		margin-top:-245px;
+    }
+
+    .boxed{
+		width: 384px;
+		color: #494949;
+		background-color: #ffffff;
+		border: 1px solid #e6e6e6;
+		font-weight: lighter;
+		font-size:34px;
+		padding-bottom:14px;
+		margin-left: -193px;
+		margin-top:130px;
+		position:absolute;
+
+		left:50%;
+		top:50%;
+    }
+
+}
+
+</style>
+	<body>
+		<div class="header" id="message">
+			<script type="text/javascript">
+				getRandom(ImgArray, "");
+			</script>
+		<div>
+		<div class="search">
+			<form method="get" action="https://encrypted.google.com/search">
+				<input type="text" name="q" id="s" class="input" placeholder=" Search" autofocus="autofocus" />
+			</form>
+		</div>
+		<div class="boxed">
+
+			<a style="padding-left:0px" href="http://mail.google.com">mail</a>
+			<a href="https://play.google.com/music/listen?u=1#/now">play</a>
+		       <a href="http://www.last.fm/">last.fm</a>
+			<a href="https://www.facebook.com">fb</a>
+			<a href="http://nyaa.se/">nyaa</a>
+      <a href ="https://youtube.com">yt</a>
+			<br>
+			&nbsp;
+			<a href="http://boards.4chan.org/a/">/a/</a>
+			<a href="http://boards.4chan.org/jp/">/jp/</a>
+			<a href="https://manga.madokami.com/">madokami</a>
+			</span>
+			</br>
+	</div>
+	</body>
